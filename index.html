@@ -8,23 +8,32 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+
+<div class="game-table">
+  <div class="dealer">
   <h2>Dealer: <span id="dealer-sum"></span></h2>
   <div id="dealer-cards">
-    <img id="hidden" src="./cards/BACK.png">
+    <img id="hidden" src="./cards_3/BACK.jpg">
+  </div>
   </div>
 
+  <div class="player">
   <h2>Player: <span id="player-sum"></span></h2>
   <div id="player-cards"></div>
-
-  <div class="hit-or-stay">
-    <button id="hit">Hit</button>
-    <button id="stay">Stay</button>
-    <p id="results"></p>
   </div>
+</div>
+
+<div class="hit-or-stay">
+  <button id="hit">Hit</button>
+  <button id="stay">Stay</button>
+
+  <p id="results"></p>
+</div>
+
+<div class="refresh">
+  <button onClick="window.location.reload();">New Game</button>
+</div>
 
   <script src="game.js"></script>
 </body>
 </html>
-
-<!-- https://youtu.be/bMYCWccL-3U?t=429 -->

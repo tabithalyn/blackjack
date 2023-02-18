@@ -9,8 +9,15 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
+  background-color: #222;
 }
 
+#dealer-cards {
+  text-align: center;
+}
+#player-cards {
+  text-align: center;
+}
 #dealer-cards img {
   height: 175px;
   width: 125px;
@@ -31,4 +38,46 @@ body {
   width: 100px;
   height: 50px;
   font-size: 20px;
+}
+
+.game-table {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #3c3a39;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.dealer {
+  width: 100%;
+}
+.player {
+  width: 100%;
+}
+
+.hit-or-stay {
+ text-align: center;
+ margin-top: 20px;
+}
+
+.refresh {
+  text-align: center;
+}
+.refresh button {
+  padding: 5px;
+}
+
+#results {
+  text-align: center;
+  margin: 10px;
+  color: #f3f3f3;
+  font-size: 40px;
+}
+h2 {
+  text-align: center;
+  margin-top: 50px;
 }
