@@ -110,6 +110,10 @@ function stay() {
   document.getElementById("results").innerText = message;
 }
 
+function closeModal() {
+    document.querySelector('.results-modal').style.display = "none";
+}
+
 function getValue(card) {
   let data = card.split("-");
   let value = data[0];

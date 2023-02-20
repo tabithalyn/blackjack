@@ -24,13 +24,16 @@
 </div>
 
 <div class="hit-or-stay">
-  <button id="hit">Hit</button>
-  <button id="stay">Stay</button>
+  <button id="hit" class="raise">Hit</button>
+  <button id="stay" class="raise2">Stay</button>
+  <br>
+  <button onClick="window.location.reload();" class="refresh">New Game</button>
 
 <div class="results-modal">
   <p id="results"></p>
   <h2>Dealer: <span class="dealer-sum"></span></h2>
   <h2>Player: <span class="player-sum"></span></h2>
+  <button class="close-modal" onclick="closeModal()">View Final Cards</button>
   <button onClick="window.location.reload();" class="refresh">New Game</button>
 </div>
 </div>

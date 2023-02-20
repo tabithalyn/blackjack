@@ -12,6 +12,15 @@ body {
   background-color: #222;
 }
 
+.player-sum {
+  color: #9e3ae5;
+  text-shadow: 0 0 50px 15px #9e3ae5;
+}
+.dealer-sum {
+  color: #3a98e5;
+  text-shadow: 0 0 50px 15px #3a98e5;
+}
+
 #dealer-cards {
   text-align: center;
 }
@@ -80,13 +89,29 @@ body {
 }
 .hit-or-stay button {
   font-family: 'VT323', monospace;
+  margin: 10px;
+}
+.raise:hover, .raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em #d73ae5;
+  transform: translateY(-0.25em);
+  border: 2px solid #d73ae5;
+  transition: all ease-in-out 0.4s;
+  color: #d73ae5;
+}
+.raise2:hover, .raise2:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em #4143e7;
+  transform: translateY(-0.25em);
+  border: 2px solid #4143e7;
+  transition: all ease-in-out 0.4s;
+  color: #4143e7;
 }
 
 .refresh {
-  padding: 5px;
+  padding: 5px 8px;
   font-family: 'VT323', monospace;
   font-size: 40px;
   margin-top: 5%;
+  display: inline-block;
 }
 
 #results {
@@ -95,7 +120,17 @@ body {
   color: #f3f3f3;
   font-size: 60px;
   font-family: 'Audiowide', cursive;
+  box-shadow: 0 0 50px 15px #eb3ed1;
 }
+
+.close-modal {
+  padding: 5px 8px;
+  font-size: 40px;
+  display: inline-block;
+  margin-top: -5%;
+  text-align: center;
+}
+
 h2 {
   text-align: center;
   margin-top: 50px;
