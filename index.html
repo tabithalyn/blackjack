@@ -13,7 +13,7 @@
   <div class="dealer">
   <h2>Dealer: <span id="dealer-sum"></span></h2>
   <div id="dealer-cards">
-    <img id="hidden" src="./cards_3/BACK.jpg">
+    <img id="hidden" src="./cards_2/BACK.jpg">
   </div>
   </div>
 
@@ -27,12 +27,14 @@
   <button id="hit">Hit</button>
   <button id="stay">Stay</button>
 
+<div class="results-modal">
   <p id="results"></p>
+  <h2>Dealer: <span class="dealer-sum"></span></h2>
+  <h2>Player: <span class="player-sum"></span></h2>
+  <button onClick="window.location.reload();" class="refresh">New Game</button>
+</div>
 </div>
 
-<div class="refresh">
-  <button onClick="window.location.reload();">New Game</button>
-</div>
 
   <script src="game.js"></script>
 </body>

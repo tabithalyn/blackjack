@@ -44,7 +44,7 @@ function startGame() {
   while (dealerSum < 17) {
     let cardImg = document.createElement("img");
     let card = deck.pop();
-    cardImg.src = "./cards_3/" + card + ".jpg";
+    cardImg.src = "./cards_2/" + card + ".jpg";
     dealerSum += getValue(card);
     dealerAceCount += checkAce(card);
     document.getElementById("dealer-cards").append(cardImg);
@@ -53,7 +53,7 @@ function startGame() {
   for (let i = 0; i < 2; i++) {
     let cardImg = document.createElement("img");
     let card = deck.pop();
-    cardImg.src = "./cards_3/" + card + ".jpg";
+    cardImg.src = "./cards_2/" + card + ".jpg";
     playerSum += getValue(card);
     playerAceCount += checkAce(card);
     document.getElementById("player-cards").append(cardImg);
@@ -69,7 +69,7 @@ function hit() {
   }
   let cardImg = document.createElement("img");
     let card = deck.pop();
-    cardImg.src = "./cards_3/" + card + ".jpg";
+    cardImg.src = "./cards_2/" + card + ".jpg";
     playerSum += getValue(card);
     playerAceCount += checkAce(card);
     document.getElementById("player-cards").append(cardImg);
@@ -85,7 +85,7 @@ function stay() {
   playerSum = reduceAce(playerSum, playerAceCount);
 
   canHit = false;
-  document.getElementById("hidden").src = "./cards_3/" + hidden + ".jpg";
+  document.getElementById("hidden").src = "./cards_2/" + hidden + ".jpg";
 
   let message = "";
   if (playerSum > 21) {
@@ -100,8 +100,12 @@ function stay() {
     message = "You Lose!";
   }
 
+  document.querySelector('.results-modal').style.display = "block";
+
   document.getElementById("dealer-sum").innerText = dealerSum;
   document.getElementById("player-sum").innerText = playerSum;
+  document.querySelector(".dealer-sum").innerText = dealerSum;
+  document.querySelector(".player-sum").innerText = playerSum;
 
   document.getElementById("results").innerText = message;
 }
