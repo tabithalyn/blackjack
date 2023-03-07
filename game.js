@@ -44,7 +44,7 @@ function startGame() {
   while (dealerSum < 17) {
     let cardImg = document.createElement("img");
     let card = deck.pop();
-    cardImg.src = "./cards_2/" + card + ".jpg";
+    cardImg.src = "./assets/w95/" + card + ".png";
     dealerSum += getValue(card);
     dealerAceCount += checkAce(card);
     document.getElementById("dealer-cards").append(cardImg);
@@ -53,7 +53,7 @@ function startGame() {
   for (let i = 0; i < 2; i++) {
     let cardImg = document.createElement("img");
     let card = deck.pop();
-    cardImg.src = "./cards_2/" + card + ".jpg";
+    cardImg.src = "./assets/w95/" + card + ".png";
     playerSum += getValue(card);
     playerAceCount += checkAce(card);
     document.getElementById("player-cards").append(cardImg);
@@ -63,13 +63,14 @@ function startGame() {
   document.getElementById("stay").addEventListener('click', stay);
 }
 
+// HIT
 function hit() {
   if (!canHit) {
     return;
   }
   let cardImg = document.createElement("img");
     let card = deck.pop();
-    cardImg.src = "./cards_2/" + card + ".jpg";
+    cardImg.src = "./assets/w95/" + card + ".png";
     playerSum += getValue(card);
     playerAceCount += checkAce(card);
     document.getElementById("player-cards").append(cardImg);
@@ -80,12 +81,13 @@ function hit() {
     }
 }
 
+// STAY
 function stay() {
   dealerSum = reduceAce(dealerSum, dealerAceCount);
   playerSum = reduceAce(playerSum, playerAceCount);
 
   canHit = false;
-  document.getElementById("hidden").src = "./cards_2/" + hidden + ".jpg";
+  document.getElementById("hidden").src = "./assets/w95/" + hidden + ".png";
 
   let message = "";
   if (playerSum > 21) {
@@ -114,6 +116,10 @@ function closeModal() {
     document.querySelector('.results-modal').style.display = "none";
 }
 
+function chooseDeck() {
+  document.querySelector('.choose-cards').style.display = "none";
+}
+
 function getValue(card) {
   let data = card.split("-");
   let value = data[0];
@@ -127,13 +133,13 @@ function getValue(card) {
   return parseInt(value);
 }
 
+// dealing w the ace
 function checkAce(card) {
   if (card[0] == "A") {
     return 1;
   }
   return 0;
 }
-
 function reduceAce(playerSum, playerAceCount) {
   while (playerSum > 22 && playerAceCount > 0) {
     playerSum -= 10;

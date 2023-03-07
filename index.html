@@ -6,14 +6,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Black Jack</title>
   <link rel="stylesheet" href="style.css">
+  
 </head>
 <body>
+
+<div class="choose-cards">
+<div class="pick-back">
+  <div class="select">Select Card Back</div>
+  <div class="xButton">&#10005;</div>
+  <form>
+    <label>
+      <input type="radio" name="card back" id="back1" value="one" checked>
+      <img src="./assets/w95/BACK_1.png" alt="card back - pattern 1">
+    </label>
+    <label>
+      <input type="radio" name="card back" id="back2" value="two">
+      <img src="./assets/w95/BACK_2.png" alt="card back - pattern 2">
+    </label>
+    <label>
+      <input type="radio" name="card back" id="back3" value="three">
+      <img src="./assets/w95/BACK_3.png" alt="card back - fish light blue">
+    </label>
+    <label>
+      <input type="radio" name="card back" id="back4" value="four">
+      <img src="./assets/w95/BACK_4.png" alt="card back - fish dark blue">
+    </label>
+    <label>
+      <input type="radio" name="card back" id="back5" value="five">
+      <img src="./assets/w95/BACK_5.png" alt="card back - vines dark">
+    </label>
+    <label>
+      <input type="radio" name="card back" id="back6" value="six">
+      <img src="./assets/w95/BACK_6.png" alt="card back - vines blue">
+    </label>
+    <label>
+      <input type="radio" name="card back" id="back7" value="seven">
+      <img src="./assets/w95/BACK_7.png" alt="card back - robot">
+    </label>
+    <label>
+      <input type="radio" name="card back" id="back8" value="eight">
+      <img src="./assets/w95/BACK_8.png" alt="card back - roses">
+    </label>
+    <label>
+      <input type="radio" name="card back" id="back9" value="nine">
+      <img src="./assets/w95/BACK_9.png" alt="card back - seashell">
+    </label>
+    <label>
+      <input type="radio" name="card back" id="back10" value="ten">
+      <img src="./assets/w95/BACK_10.png" alt="card back - haunted house">
+    </label>
+    <label>
+      <input type="radio" name="card back" id="back11" value="eleven">
+      <img src="./assets/w95/BACK_11.png" alt="card back - beach">
+    </label>
+    <label>
+      <input type="radio" name="card back" id="back12" value="twelve">
+      <img src="./assets/w95/BACK_12.png" alt="card back - holding cards">
+    </label>
+  </form>
+  <div class="select-btns">
+    <button onclick="submitData()">OK</button>
+    <button>Cancel</button>
+  </div>
+</div>
+</div>
 
 <div class="game-table">
   <div class="dealer">
   <h2>Dealer: <span id="dealer-sum"></span></h2>
   <div id="dealer-cards">
-    <img id="hidden" src="./cards_2/BACK.jpg">
   </div>
   </div>
 
