@@ -102,6 +102,8 @@ function stay() {
     message = "You Lose!";
   }
 
+  document.getElementById('hit').style.display = "none";
+  document.getElementById('stay').style.display = "none";
   document.querySelector('.results-modal').style.display = "block";
 
   document.getElementById("dealer-sum").innerText = dealerSum;
@@ -114,10 +116,6 @@ function stay() {
 
 function closeModal() {
     document.querySelector('.results-modal').style.display = "none";
-}
-
-function chooseDeck() {
-  document.querySelector('.choose-cards').style.display = "none";
 }
 
 function getValue(card) {
@@ -147,3 +145,5 @@ function reduceAce(playerSum, playerAceCount) {
   }
   return playerSum;
 }
+
+// https://stackoverflow.com/questions/33967140/change-html-according-to-select

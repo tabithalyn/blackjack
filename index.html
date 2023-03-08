@@ -75,6 +75,7 @@
   <div class="dealer">
   <h2>Dealer: <span id="dealer-sum"></span></h2>
   <div id="dealer-cards">
+    <img src="./assets/w95/BACK_7.png" id="hidden" alt="hidden dealer card">
   </div>
   </div>
 
@@ -91,11 +92,19 @@
   <button onClick="window.location.reload();" class="refresh">New Game</button>
 
 <div class="results-modal">
-  <p id="results"></p>
-  <h2>Dealer: <span class="dealer-sum"></span></h2>
-  <h2>Player: <span class="player-sum"></span></h2>
-  <button class="close-modal" onclick="closeModal()">View Final Cards</button>
-  <button onClick="window.location.reload();" class="refresh">New Game</button>
+  <div class="res">
+    <div class="resultati">
+      <div class="sel">Results</div>
+      <div class="x-button" onclick="closeModal()">&#10005;</div>
+      <p id="results"></p>
+        <h2>Dealer: <span class="dealer-sum"></span></h2>
+        <h2>Player: <span class="player-sum"></span></h2>
+      <div class="s-btns">
+        <button onClick="window.location.reload();">New Game</button>
+      </div>
+      </div>
+    </div>
+  </div>
 </div>
 </div>
 
