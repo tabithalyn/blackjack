@@ -16,56 +16,56 @@
   <div class="xButton">&#10005;</div>
   <form>
     <label>
-      <input type="radio" name="card back" id="back1" value="one" checked>
+      <input type="radio" name="card back" id="back" value="1" checked>
       <img src="./assets/w95/BACK_1.png" alt="card back - pattern 1">
     </label>
     <label>
-      <input type="radio" name="card back" id="back2" value="two">
+      <input type="radio" name="card back" id="back" value="2">
       <img src="./assets/w95/BACK_2.png" alt="card back - pattern 2">
     </label>
     <label>
-      <input type="radio" name="card back" id="back3" value="three">
+      <input type="radio" name="card back" id="back" value="3">
       <img src="./assets/w95/BACK_3.png" alt="card back - fish light blue">
     </label>
     <label>
-      <input type="radio" name="card back" id="back4" value="four">
+      <input type="radio" name="card back" id="back" value="4">
       <img src="./assets/w95/BACK_4.png" alt="card back - fish dark blue">
     </label>
     <label>
-      <input type="radio" name="card back" id="back5" value="five">
+      <input type="radio" name="card back" id="back" value="5">
       <img src="./assets/w95/BACK_5.png" alt="card back - vines dark">
     </label>
     <label>
-      <input type="radio" name="card back" id="back6" value="six">
+      <input type="radio" name="card back" id="back" value="6">
       <img src="./assets/w95/BACK_6.png" alt="card back - vines blue">
     </label>
     <label>
-      <input type="radio" name="card back" id="back7" value="seven">
+      <input type="radio" name="card back" id="back" value="7">
       <img src="./assets/w95/BACK_7.png" alt="card back - robot">
     </label>
     <label>
-      <input type="radio" name="card back" id="back8" value="eight">
+      <input type="radio" name="card back" id="back" value="8">
       <img src="./assets/w95/BACK_8.png" alt="card back - roses">
     </label>
     <label>
-      <input type="radio" name="card back" id="back9" value="nine">
+      <input type="radio" name="card back" id="back" value="9">
       <img src="./assets/w95/BACK_9.png" alt="card back - seashell">
     </label>
     <label>
-      <input type="radio" name="card back" id="back10" value="ten">
+      <input type="radio" name="card back" id="back" value="10">
       <img src="./assets/w95/BACK_10.png" alt="card back - haunted house">
     </label>
     <label>
-      <input type="radio" name="card back" id="back11" value="eleven">
+      <input type="radio" name="card back" id="back" value="11">
       <img src="./assets/w95/BACK_11.png" alt="card back - beach">
     </label>
     <label>
-      <input type="radio" name="card back" id="back12" value="twelve">
+      <input type="radio" name="card back" id="back" value="12">
       <img src="./assets/w95/BACK_12.png" alt="card back - holding cards">
     </label>
   </form>
   <div class="select-btns">
-    <button onclick="submitData()">OK</button>
+    <button onclick="makeChoice()">OK</button>
     <button>Cancel</button>
   </div>
 </div>
@@ -75,7 +75,7 @@
   <div class="dealer">
   <h2>Dealer: <span id="dealer-sum"></span></h2>
   <div id="dealer-cards">
-    <img src="./assets/w95/BACK_7.png" id="hidden" alt="hidden dealer card">
+    <img id="hidden">
   </div>
   </div>
 
@@ -86,8 +86,8 @@
 </div>
 
 <div class="hit-or-stay">
-  <button id="hit" class="raise">Hit</button>
-  <button id="stay" class="raise2">Stay</button>
+  <button id="hit">Hit</button>
+  <button id="stay">Stay</button>
   <br>
   <button onClick="window.location.reload();" class="refresh">New Game</button>
 
@@ -108,7 +108,7 @@
 </div>
 </div>
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="game.js"></script>
 </body>
 </html>
