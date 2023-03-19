@@ -149,44 +149,50 @@ function reduceAce(playerSum, playerAceCount) {
   return playerSum;
 }
 
-// https://stackoverflow.com/questions/33967140/change-html-according-to-select
-
-
+// choose your deck
 $("input").on("change", function() {
-  if($(this).prop("value") === "1") {
-    $('#hidden').attr("src", "./assets/w95/BACK_1.png");
-  }
   if($(this).prop("value") === "2") {
+    $('#hidden').removeAttr("src", "./assets/w95/BACK_2.png");
     $('#hidden').attr("src", "./assets/w95/BACK_2.png");
   }
   if($(this).prop("value") === "3") {
     $('#hidden').attr("src", "./assets/w95/BACK_3.png");
+    $('#hidden').removeAttr("src", "./assets/w95/BACK_2.png");
   }
   if($(this).prop("value") === "4") {
+    $('#hidden').removeAttr("src", "./assets/w95/BACK_2.png");
     $('#hidden').attr("src", "./assets/w95/BACK_4.png");
   }
   if($(this).prop("value") === "5") {
+    $('#hidden').removeAttr("src", "./assets/w95/BACK_2.png");
     $('#hidden').attr("src", "./assets/w95/BACK_5.png");
   }
   if($(this).prop("value") === "6") {
+    $('#hidden').removeAttr("src", "./assets/w95/BACK_2.png");
     $('#hidden').attr("src", "./assets/w95/BACK_6.png");
   }
   if($(this).prop("value") === "7") {
+    $('#hidden').removeAttr("src", "./assets/w95/BACK_2.png");
     $('#hidden').attr("src", "./assets/w95/BACK_7.png");
   }
   if($(this).prop("value") === "8") {
+    $('#hidden').removeAttr("src", "./assets/w95/BACK_2.png");
     $('#hidden').attr("src", "./assets/w95/BACK_8.png");
   }
   if($(this).prop("value") === "9") {
+    $('#hidden').removeAttr("src", "./assets/w95/BACK_2.png");
     $('#hidden').attr("src", "./assets/w95/BACK_9.png");
   }
   if($(this).prop("value") === "10") {
+    $('#hidden').removeAttr("src", "./assets/w95/BACK_2.png");
     $('#hidden').attr("src", "./assets/w95/BACK_10.png");
   }
   if($(this).prop("value") === "11") {
+    $('#hidden').removeAttr("src", "./assets/w95/BACK_2.png");
     $('#hidden').attr("src", "./assets/w95/BACK_11.png");
   }
   if($(this).prop("value") === "12") {
+    $('#hidden').removeAttr("src", "./assets/w95/BACK_2.png");
     $('#hidden').attr("src", "./assets/w95/BACK_12.png");
   }
 });
