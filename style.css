@@ -336,44 +336,179 @@ h2 {
  
  /* Tablet */
  @media all and (min-width: 480px) and (max-width: 768px) {
-  #dealer-cards img {
-    height: 135px;
-    width: 100px;
-    margin: 1px;
-    border-radius: 10px;
-    border: 2px solid #000;
-  }
-  #player-cards img {
-    height: 135px;
-    width: 100px;
-    margin: 1px;
-    border-radius: 10px;
-    border: 2px solid #000;
-  }
-  .game-table {
-    width: 100%;
-    margin: 0 auto;
-  }
+ 
  }
 
  /* Mobile */
  @media all and (max-width: 480px) {
+  .resultati {
+    z-index: 4;
+    padding: 4px 3px;
+    background-color: #c0c0c0;
+    width: 280px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 200px;
+  }
+  .x-button {
+    width: 20px;
+    height: 19px;
+    font-size: 14px;
+    line-height: 18px;
+    background-color: #c0c0c0;
+    color: #000;
+    margin-left: 245px;
+    margin-top: -24px;
+    margin-bottom: 10px;
+    z-index: 5;
+    border: solid 1px #000;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 0.5px #000;
+    box-shadow: 0.5px 0.5px #000;
+    cursor: url(./assets/Cursor_15.png), auto;
+    box-shadow: inset 1px 1px 0px 0px #fff, inset -1px -1px 0px 0px #000;
+  }
+  .sel {
+    margin: 0 auto;
+    text-align: left;
+    padding: 5px;
+    font-weight: bold;
+    color: #fff;
+    width: 270px;
+    font-size: 20px;
+    background-color: #02007f;
+  }
+  .pick-back {
+    z-index: 4;
+    padding: 4px 3px;
+    background-color: #c0c0c0;
+    width: 280px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 200px;
+  }
+  .pick-back img {
+    width: 63px;
+    height: 95px;
+  }
+  .select {
+    margin: 0 auto;
+    padding: 5px;
+    font-weight: bold;
+    color: #fff;
+    width: 270px;
+    font-size: 18px;
+    background-color: #02007f;
+  }
+  .select-btns button {
+    width: 70px;
+    padding: 6px 8px 5px 8px;
+    font-family: 'W95';
+    font-size: 15px;
+    margin-right: 10px;
+    cursor: url(./assets/Cursor_15.png), auto;
+    background-color: #c0c0c0;
+    border-right: solid 2px #000;
+    border-bottom: solid 2px #000;
+    border-left: solid 2px #fff;
+    border-top: 2px solid #fff;
+  }
+  .xButton {
+    width: 20px;
+    height: 19px;
+    font-size: 14px;
+    line-height: 18px;
+    background-color: #c0c0c0;
+    color: #000;
+    margin-left: 245px;
+    margin-top: -23px;
+    margin-bottom: 10px;
+    z-index: 5;
+    border: solid 1px #000;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 0.5px #000;
+    box-shadow: 0.5px 0.5px #000;
+    cursor: url(./assets/Cursor_15.png), auto;
+    box-shadow: inset 1px 1px 0px 0px #fff, inset -1px -1px 0px 0px #000;
+  }
+  .close-modal {
+    padding: 5px 8px 4px 8px;
+    font-size: 20px;
+    display: inline-block;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    text-align: center;
+    cursor: url(./assets/Cursor_15.png), auto;
+    border-radius: 0;
+  }
   #dealer-cards img {
-    height: 100px;
-    width: 50px;
+    height: 105px;
+    width: 70px;
     margin: 1px;
     border-radius: 10px;
     border: 2px solid #000;
   }
   #player-cards img {
-    height: 100px;
-    width: 50px;
+    height: 105px;
+    width: 70px;
     margin: 1px;
     border-radius: 10px;
     border: 2px solid #000;
   }
+
+  #hit {
+    width: 70px;
+    height: 45px;
+    font-size: 20px;
+  }
+  #stay {
+    width: 70px;
+    height: 45px;
+    font-size: 20px;
+  }
+  .refresh {
+    padding: 5px 8px;
+    font-family: 'W95';
+    font-size: 20px;
+    margin-top: 5%;
+    display: inline-block;
+  }
+  .game-table {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: transparent;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    z-index: 2;
+  }
+  .s-btns {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+  #results {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 35px;
+    color: #000;
+    font-size: 55px;
+    font-family: 'W95';
+    animation: blinker 0.5s step-end infinite;
+  }
  }
- 
+
  /* Portrait */
  @media screen and (orientation:portrait) { /* Portrait styles here */ }
  /* Landscape */
